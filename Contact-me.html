@@ -2,13 +2,15 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8">//default encoding utf-8
   <title></title>
 </head>
 
 <body>
   <center>
-    <form action="mailto:snehapriya@gmail.com" method="post">
+    <form action="mailto:snehapriya1772@gmail.com" method="post" enctype="text/plain">
+      //resetting the encoding type to plain text so while website holder receives the mail she can see details of name, email, passcode, query, human without any special characters
+      //just see results in output to understand with and without enctype setting
       <h3><u>My Message to Sneha Priya</u></h3>
 
       <label>Name : </label>
@@ -17,15 +19,16 @@
       <input type="email" name="email"><br />
       <label>Password : </label>
       <input type="password" name="pwd"><br />
-      <label>Address : </label>
-      <textarea name="address" rows="5" cols="100"></textarea><br />
+      <label>Query : </label>
+      <textarea name="query" rows="5" cols="100"></textarea><br />
       <label>Photo : </label>
       <input type="file"><br />
       <label>I am not a robot : </label>
       <input type="checkbox" name="human"><br />
-      <input type="submit"><input type="reset">
+      <input type="submit"> <input type="reset">
     </form>
   </center>
 </body>
-
+  
 </html>
+
